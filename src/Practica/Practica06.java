@@ -100,32 +100,5 @@ public class Practica06 {
     System.out.println(estudiante.toString());
     System.out.println(docente.toString());
     docente.mostrarMaterias();
-  }
-  //funcion agregada 
-public static Docentes registrarDocente() {
-    Scanner sc = new Scanner(System.in);
-
-    System.out.println("Registro de un nuevo docente");
-    System.out.println("=======================");
-
-    System.out.print("ingrese el nombre del docente: ");
-    String nombre = sc.nextLine();
-
-    System.out.print("ingrese el apellido del docente: ");
-    String apellido = sc.nextLine();
-
-    System.out.print("ingrese el DNI del docente: ");
-    int dni = sc.nextInt();
-
-    System.out.print("cuantas materias dicta este docente?: ");
-    int cantMaterias = sc.nextInt();
-
-    Materia[] materias = new Materia[cantMaterias ];
-    System.out.println("\ningrese los nombres de las materias:");
-    for (int i = 0; i < cantMaterias; i++) {
-      System.out.print("Materia " + (i + 1) + ": ");
-      materias[i] = new Materia(nombreMateria);
-    }
-    return new Docentes(nombre, apellido, dni, materias);
 }
 
